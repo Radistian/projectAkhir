@@ -8,19 +8,25 @@
     <title >Jus Buah Segar</title>
 </head>
  <body>
-    <header class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
-        <div class="flex justify-between items-center py-8 px-32">
+    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white transition-all">
+        <div class="flex justify-between items-center py-8 px-32 w-4/5 m-auto flex-wrap">
         <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
+        <div class="md:hidden block" onclick="showHideMenu()">
+            <i class="bx bx-menu text-4xl dark:text-white"></i>
+        </div>
+        <div id="menu"
+        class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
         <nav>
-            <ul class="flex gap-10">
+            <ul class="flex flex-col md:flex-row gap-8 capitalize">
                 <li class="text-lg text-f1 font-semibold"><a href="#">Home</li></a>
                 <li class="text-lg text-f2"><a href="about.html"> About</li></a>
                 <li class="text-lg text-f2"><a href="products.html"> Products</li></a>   
                 <li class="text-lg text-f2"><a href=""> Locations</li></a>
                 <li class="text-lg text-f2"><a href=""> Contact</li></a>
-                <li class="text-lg text-f2"><a href=""> Article</li></a>  
+                <li class="text-lg text-f2"><a href="Article.html"> Article</li></a>  
             </ul>
         </nav>
+    </div>
     </div>
     </header>
     <main>
@@ -158,6 +164,39 @@
             <p class="uppercase text-f5/60 items-center">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
+    <script>
+         function menu() {
+                if (document.documentElement.scrollTop > 20) {
+                    document.getElementById('topHeader').classList.add("bg-white");
+                    document.getElementById('topHeader').classList.add("shadow-lg");
+                } else {
+                    if (document.documentElement.scrollTop == 0 && !xStatus) {
+                        document.getElementById('topHeader').classList.remove('bg-white');
+                        document.getElementById('topHeader').classList.remove('shadow-lg');
+                    }
+                }
+            }
+            var xStatus = false;
+
+            function showHideMenu() {
+                if (!xStatus) {
+                    document.getElementById('menu').classList.remove("hidden");
+                    document.getElementById('menu').classList.add("flex");
+                    if (document.documentElement.scrollTop < 20) {
+                        document.getElementById('topHeader').classList.add("bg-white");
+                    }
+                    xStatus = true;
+                } else {
+                    if (document.documentElement.scrollTop < 20) {
+                        document.getElementById('topHeader').classList.remove("bg-white");
+                    }
+                    xStatus = false;
+                    document.getElementById('menu').classList.add("hidden");
+                    document.getElementById('menu').classList.remove("flex");
+                }
+            }
+        </script>
+    </script>
 </body>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>   
 </html>
