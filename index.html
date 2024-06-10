@@ -5,85 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <title >Jus Buah Segar</title>
 </head>
  <body>
     <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white transition-all">
-        <div class="flex justify-between items-center py-8 px-32 w-4/5 m-auto flex-wrap">
+        <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-center">
         <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
         <div class="md:hidden block" onclick="showHideMenu()">
             <i class="bx bx-menu text-4xl dark:text-white"></i>
         </div>
         <div id="menu"
-        class="hidden md:flex flex-col md:flex-row basis-auto grow justify-between items-start md:items-center gap-5 md:gap-0">
+        class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-start md:items-center gap-80 md:gap-80 bg-white">
         <nav>
-            <ul class="flex flex-col md:flex-row gap-8 capitalize">
+            <ul class="flex gap-10 flex-col md:flex md:flex-row text-center justify-center items-center ">
                 <li class="text-lg text-f1 font-semibold"><a href="#">Home</li></a>
                 <li class="text-lg text-f2"><a href="about.html"> About</li></a>
                 <li class="text-lg text-f2"><a href="products.html"> Products</li></a>   
-                <li class="text-lg text-f2"><a href=""> Locations</li></a>
-                <li class="text-lg text-f2"><a href=""> Contact</li></a>
-                <li class="text-lg text-f2"><a href="Article.html"> Article</li></a>  
+                <li class="text-lg text-f2"><a href="location.html"> Locations</li></a>
+                <li class="text-lg text-f2"><a href="contact.html"> Contact</li></a>
+                <li class="text-lg text-f2"><a href="article.html"> Article</li></a>  
             </ul>
         </nav>
     </div>
     </div>
     </header>
     <main>
-        <section id="about" class="w-full min-h-screen pt-40 py-6 px-12 flex flex-row justify-center">
-            <div id="kiri" class="w-[55%] flex flex-col gap-4 justify-center">
-            <p class="capitalize text-lg text-[#FF7F00]">Healthy and Delicious Juices</p>
-            <p class="capitalize font-bold text-6xl w-[75%] leading-[65px]">Fullfil all your vitamin needs by drinking juice</p>
-            <p class="w-[65%]">Manusia membutuhkan beberapa vitamin untuk memenuhi kebutuhanya sehari hari, ini lah fakta menarik dari juz buah </p>
-            <button class="flex justify-center bg-f3 w-[150px] h-12 items-center rounded-2xl text-white opacity-[70%]">Read More<i class='bx bx-chevron-right text-[30px] relative left-3'></i></button>
+        <section id="about" class="w-full min-h-screen pt-40 py-6 px-12 flex flex-col-reverse justify-center md:flex-row">
+            <div id="kiri" class="w-full flex flex-col gap-4 justify-center md:flex-col md:w-3/4 items-center md:items-start">
+            <p class="capitalize text-sm text-[#FF7F00] md:text-xl">Healthy and Delicious Juices</p>
+            <p class="capitalize font-bold text-2xl md:text-6xl md:w-[75%] w-full">Fullfil all your vitamin needs by drinking juice</p>
+            <p class="w-1/2 md:w-[65%]">Manusia membutuhkan beberapa vitamin untuk memenuhi kebutuhanya sehari hari, ini lah fakta menarik tentang kita</p>
+            <a href="about.html"><button class="flex justify-center bg-f3 w-[150px] h-12 items-center rounded-2xl text-white opacity-[70%]">Read More<i class='bx bx-chevron-right text-[30px] relative left-3'></i></button></a>
         </div>
-        <div id="kanan" class="w-1/2 flex justify-end">
+        <div id="kanan" class="w-full flex justify-end md:w-1/2">
             <img src="assets/images/about.png" class="size-[550px]">
         </div>
         </section>
         <section id="product" class="py-24 mih-h-screen">
             <p class="text-7xl flex justify-center font-bold text-f4 uppercase tracking-widest">Product</p>
             <div class="w-full flex flex-col justify-center items-center">
-                <div class="grid grid-cols-3 gap-24 relative top-40">
-                    <div id="kotak1" class="overflow-hidden bg-slate-400 rounded-3xl w-[285px] h-[320px]">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-1/3 bg-white"></div>
+                <div class="grid grid-cols-2 gap-20 relative top-40 md:grid md:grid-cols-3 ">
+                    <div id="kotak1" class=" bg-f9 rounded-3xl w-[285px] h-[320px] ">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas1.png" alt="" class="w-[100px] m-auto relative bottom-9">
+                        </div>
+                        <div class="w-full h-1/3 bg-white rounded-bl-3xl rounded-br-3xl">
+                            <p class="text-center py-7 text-3xl tracking-wide">Avocado</p>
+                        </div>
                     </div>
-                    <div id="kotak2" class="overflow-hidden bg-slate-400 rounded-3xl w-[285px] h-[320px]">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-1/3 bg-white"></div>
+                    <div id="kotak2" class=" bg-f9 rounded-3xl w-[285px] h-[320px]">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas2.png" alt="" class="w-[130px] m-auto">
+                        </div>
+                        <div class="w-full h-1/3 bg-white rounded-bl-3xl rounded-br-3xl">
+                            <p class="text-center py-7 text-3xl tracking-wide">Strawberry</p>
+                        </div>
                     </div>
-                    <div id="kotak3" class="w-[285px] h-[320px] bg-slate-400 rounded-3xl overflow-hidden">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-2/3 bg-white"></div>
+                    <div id="kotak3" class="w-[285px] h-[320px] bg-f9 rounded-3xl overflow-hidden">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas3.png" alt="" class="w-[280px] m-auto relative bottom-14">
+                        </div>
+                        <div class="w-full h-2/3 bg-white">
+                            <p class="text-center py-7 text-3xl tracking-wide">Orange</p>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full h-[32rem] px-[10rem]">
-                    <div class="w-full h-full rounded-xl bg-yellow-500"></div>
+                    <div class="w-full h-full rounded-3xl bg-bgJus"></div>
                 </div>
                 <div class="grid grid-cols-3 gap-24 relative bottom-[16rem]">
-                    <div id="kotak4" class="w-[285px] h-[320px] bg-slate-400 rounded-3xl overflow-hidden">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-2/3 bg-cyan-500"></div>
+                    <div id="kotak4" class="w-[285px] h-[320px] bg-f9 rounded-3xl overflow-hidden shadow-lg">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas4.png" alt="" class="w-[280px] m-auto relative bottom-14">
+                        </div>
+                        <div class="w-full h-2/3 bg-white ">
+                            <p class="text-center py-7 text-3xl tracking-wide">Guava</p>
+                        </div>
                     </div>
-                    <div id="kotak5" class="w-[285px] h-[320px] bg-slate-400 rounded-3xl overflow-hidden">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-2/3 bg-cyan-500"></div>
+                    <div id="kotak5" class="w-[285px] h-[320px] bg-f9 rounded-3xl overflow-hidden shadow-lg">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas5.png" alt="" class="m-auto relative bottom-8">
+                        </div>
+                        <div class="w-full h-2/3 bg-white">
+                            <p class="text-center py-7 text-3xl tracking-wide">Lemon</p>
+                        </div>
                     </div>
-                    <div id="kotak6" class="w-[285px] h-[320px] bg-slate-400 rounded-3xl overflow-hidden">
-                        <div class="w-full h-2/3"></div>
-                        <div class="w-full h-2/3 bg-cyan-500"></div>
+                    <div id="kotak6" class="w-[285px] h-[320px] bg-f9 rounded-3xl overflow-hidden shadow-lg">
+                        <div class="w-full h-2/3">
+                            <img src="assets/images/gelas6.png" alt="" class="w-[200px] m-auto">
+                        </div>
+                        <div class="w-full h-2/3 bg-white">
+                            <p class="text-center py-7 text-3xl tracking-wide">Grape</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="w-full flex justify-center">
-                <button class="flex justify-center bg-f3 w-[170px] h-12 items-center rounded-2xl text-lg text-white opacity-[70%]">Show More<i class='bx bx-chevron-right text-[30px] relative left-3'></i></button>
+                <a href="products.html"><button class="flex justify-center bg-f3 w-[170px] h-12 items-center rounded-2xl text-lg text-white opacity-[70%]">Show More<i class='bx bx-chevron-right text-[30px] relative left-3'></i></button></a>
             </div>
         </section>
         <section id="whychooseus" class="py-24 pb-[20rem] px-12">
             <div class="flex flex-row gap-10">
                 <div class="">
-                    <img src="assets/images/whyus1.png" alt="" class="w-[550px] rounded-3xl">
+                    <img src="assets/images/whyus1.png" alt="" class="w-[700px] rounded-3xl">
                 </div>
                 <div id="isi" class="flex flex-col gap-6">
                     <div>
@@ -111,7 +136,7 @@
                         </div>
                     </div>
                     <p class="w-[55%] tracking-wide font-thin text-lg">Juz atau Buah Juz adalah nama buah yang berasal dari Timur Tengah dan ditemukan terutama di daerah yang memiliki iklim kering seperti Mesir, Sudan, dan negara-negara di sekitarnya. Baca juga beberapa article dari kami</p>
-                    <button class="flex justify-center bg-f3 w-[150px] h-12 items-center rounded-2xl text-white opacity-[70%]">Read More <i class='bx bx-chevron-right text-[30px] relative left-3'></i></button>
+                    <a href="article.html"><button class="flex justify-center bg-f3 w-[150px] h-12 items-center rounded-2xl text-white opacity-[70%]">Read More <i class='bx bx-chevron-right text-[30px] relative left-3'></i></button></a>
                 </div>
             </div>
         </section>
@@ -129,74 +154,43 @@
         </section>
     </main>
     <div id="pesensekarang" class="py-36">
-        <p class="text-7xl text-f4 font-bold flex justify-center items-center pb-28">PESAN SEKARANG</p>
-        <div id="ojol" class="flex flex-row justify-around pb-32">
-            <img src="assets/images/gofood.png" alt="" class="w-[350px]">
-            <img src="assets/images/shopeefood.png" alt="" class="w-[300px]">
+        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+        <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
+            <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
         </div>
         <div id="ojol2" class="flex justify-center pb-28">
-            <img src="assets/images/grabfood.png" alt="" class="w-[320px]">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
         </div>
     </div>
     <footer class="pt-20 bg-f6/30">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
-                <p class="capitalize text-3xl tracking-wider text-f5 opacity-60 font-medium">address :</p>
-                <div class="gap-0">
-                    <p class="text-f5/60 ">Jus Segar</p>
-                    <p class="w-[50%] text-f5/60 ">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <div class="gap-5">
+                    <p class="text-f5/60 text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[50%] text-f5/60 text-[11px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
             </div>
             <div id="Contact" class="flex flex-col gap-6">
-                <p class="capitalize text-3xl tracking-wider text-f5 opacity-60 font-medium">Contact Us :</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full pr-10">Contact Us:</p>
                 <div class="gap-0">
-                    <p class="text-f5/60 ">Info@JusSegar.id</p>
-                    <p class="text-f5/60 ">+62 81369693636</p>
+                    <p class="text-f5/60 md:">Info@JusSegar.id</p>
+                    <p class="text-f5/60 text-lg w-full">+6281369693636</p>
                 </div>
                 <div id="sosmed" class="flex flex-row gap-3">
                     <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-instagram text-[25px] text-f5/80' ></i>
-                    <i class='bx bxl-youtube text-[25px] text-f5/80' ></i>
+                    <i class='bx bxl-instagram text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-youtube text-[25px] text-f5/80'></i>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 py-8 px-[10.5rem]">
-            <p class="uppercase text-f5/60 items-center">&copy;2024 Jus Segar. All right reserved</p>
+        <div id="copyright" class="bg-f6/50 w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
-    <script>
-         function menu() {
-                if (document.documentElement.scrollTop > 20) {
-                    document.getElementById('topHeader').classList.add("bg-white");
-                    document.getElementById('topHeader').classList.add("shadow-lg");
-                } else {
-                    if (document.documentElement.scrollTop == 0 && !xStatus) {
-                        document.getElementById('topHeader').classList.remove('bg-white');
-                        document.getElementById('topHeader').classList.remove('shadow-lg');
-                    }
-                }
-            }
-            var xStatus = false;
-
-            function showHideMenu() {
-                if (!xStatus) {
-                    document.getElementById('menu').classList.remove("hidden");
-                    document.getElementById('menu').classList.add("flex");
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById('topHeader').classList.add("bg-white");
-                    }
-                    xStatus = true;
-                } else {
-                    if (document.documentElement.scrollTop < 20) {
-                        document.getElementById('topHeader').classList.remove("bg-white");
-                    }
-                    xStatus = false;
-                    document.getElementById('menu').classList.add("hidden");
-                    document.getElementById('menu').classList.remove("flex");
-                }
-            }
-        </script>
-    </script>
 </body>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>   
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
+<script src="Function.js"></script> 
 </html>

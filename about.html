@@ -8,31 +8,120 @@
     <title>Jus Buah Segar - About</title>
 </head>
 <body>
-    <header class="w-full fixed right-0 left-0 border-b border-slate z-2 bg-white">
-        <div class="flex justify-between items-center py-8 px-32">
-        <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
-        <nav>
-            <ul class="flex gap-10">
-                <li class="text-lg text-f2 "><a href="index.html">Home</li></a>
-                <li class="text-lg text-f1 font-semibold"><a href="about.html"> About</li></a>
-                <li class="text-lg text-f2"><a href="products.html"> Products</li></a>   
-                <li class="text-lg text-f2"><a href=""> Locations</li></a>
-                <li class="text-lg text-f2"><a href=""> Contact</li></a>
-                <li class="text-lg text-f2"><a href="article.html"> Article</li></a>  
-            </ul>
-        </nav>
-    </div>
+    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
+        <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-center">
+            <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
+            <div class="md:hidden block" onclick="showHideMenu()">
+                <i class="bx bx-menu text-4xl dark:text-white"></i>
+            </div>
+            <div id="menu"
+            class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-start md:items-center gap-80 md:gap-80 bg-white">
+            <nav>
+                <ul class="flex gap-10 flex-col md:flex md:flex-row text-center justify-center items-center ">
+                    <li class="text-lg text-f2"><a href="index.html">Home</li></a>
+                    <li class="text-lg text-f1 font-semibold"><a href="#"> About</li></a>
+                    <li class="text-lg text-f2"><a href="products.html"> Products</li></a>   
+                    <li class="text-lg text-f2"><a href="location.html"> Locations</li></a>
+                    <li class="text-lg text-f2"><a href="contact.html"> Contact</li></a>
+                    <li class="text-lg text-f2"><a href="article.html"> Article</li></a>  
+                </ul>
+            </nav>
+        </div>
+        </div>
     </header>
     <main>
        <section id="about" class="w-full min-h-screen pt-40 py-6 px-12">
-        <div id="about" class="flex flex-row gap-12">
-            <img src="assets/images/whyus1.png" alt="" class="h-[700px] rounded-3xl">
+        <div id="abouttxt" class="flex md:flex-row gap-12 flex-col">
+            <img src="assets/images/whyus1.png" alt="" class="md:h-[700px] rounded-3xl w-full">
             <div class="flex flex-col justify-center gap-10">
-                <p class="text-4xl text-f5">About Fresh Juice</p>
-                <p class="text-f5 text-lg w-1/2">Jus buah segarr didirikan pada tahun 2003, berawal dari satu cabang berlokasi di Kelapa Gading, Jakarta Utara. Bermulakan hanya dengan 25 pegawai, kami mempunyai mimpi untuk menyediakan jus berkualitas dan menyehatkan  bagi masyarakat sekitar dengan harga terjangkau.</p>
+                <p class="md:text-5xl text-3xl text-f5">About Fresh Juice</p>
+                <p class="text-f5 md:text-xl md:w-[55%] leading-relaxed w-full text-lg">Jus buah segarr didirikan pada tahun 2003, berawal dari satu cabang berlokasi nagoya cibitung, bekasi. Bermulakan hanya dengan 25 pegawai, kami mempunyai mimpi untuk menyediakan jus berkualitas dan menyehatkan  bagi masyarakat sekitar dengan harga terjangkau.</p>
             </div>
         </div>
        </section>
+       <section id="whychooseus" class="w-full min-h-screen pt-40 py-6 px-12">
+        <div class="flex md:flex-row gap-12 flex-col-reverse">
+            <div class="flex flex-col justify-center gap-10">
+            <p class="md:text-5xl text-f5 capitalize text-2xl">Kenapa harus memilih kami?</p>
+            <p class="text-f5 md:text-xl md:w-[65%] leading-relaxed w-full text-lg">Karena kami mempunyai visi miisi untuk menyehatkan masyarakaat dengan menggunaka gula asli dan menggunakan bahan bahan yang fresh sehungga membuat masyarakat menjadi senang, dan harga kami terjangkau.</p>
+            </div>
+                <img src="assets/images/kenapaharusmemilihkami.png" alt="" class="md:w-[520px] md:h-[500px] rounded-3xl w-full h-full">
+        </div>
+       </section>
+       <section id="khasiat" class="w-full min-h-screen pt-40 py-8 px-12 flex flex-row gap-10">
+        <div class="md:border-t-[7px] border-t-f3 p-20 w-[40%] flex flex-col">
+        <div class="w-[450px] h-[450px] bg-f3 rounded-full">
+            <img src="assets/images/gelaskhasiat.png" alt="" class="relative bottom-8">
+        </div>
+    </div>
+    <div id="judul" class="md:border-l-[7px] border-l-f3 pl-10 ">
+        <div id="textjdl" class="flex flex-col gap-2">
+        <p class="text-xl text-f3">Manfaat</p>
+        <p class="text-2xl tracking-wider font-medium">Jus Buah Untuk Badan <span class="text-f3">Kamu</span></p>
+    </div>
+        <div id="isi1" class="py-14 flex flex-row items-center">
+            <div id="vitamin" class="flex flex-col items-center gap-2">
+                <img src="assets/images/vitamin.png" alt="" class="w-[70px]">
+                <p class="text-xl font-semibold capitalize text-f7">Kaya akan vitamin</p>
+                <p class="text-lg w-[65%] text-center">Jus buah mengandung berbagai vitamin dan mineral penting</p>
+            </div>
+            <div id="energi" class="flex flex-col items-center gap-2">
+                <img src="assets/images/energi.png" alt="" class="w-[70px]">
+                <p class="capitalize text-xl font-semibold text-f7">Meningkatkan Energi</p>
+                <p class="text-lg w-[65%] text-center">Gula alami dalam jus buah dapat memberikan dorongan energi yang cepat.</p>
+            </div>
+        </div>
+        <div id="isi2" class="py-10 flex flex-row items-center">
+            <div id="tulang" class="flex flex-col items-center gap-2">
+                <img src="assets/images/tulang.png" alt="" class="w-[70px]">
+                <p class="text-xl font-semibold capitalize text-f7">Kesehatan Tulang</p>
+                <p class="text-lg w-[65%] text-center">Vitamin D dari Jus buah dapat menjaga kesehatan tulang.</p>
+            </div>
+            <div id="energi" class="flex flex-col items-center gap-2">
+                <img src="assets/images/imun.png" alt="" class="w-[70px]">
+                <p class="capitalize text-xl font-semibold text-f7">Menjaga Imun</p>
+                <p class="text-lg w-[65%] text-center">Beberapa vitamin jus buah dapat menjaga imun tubuh kita.</p>
+            </div>
+        </div>
+    </div>
+       </section>
     </main>
+    <div id="pesensekarang" class="py-36">
+        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+        <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
+            <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+        </div>
+        <div id="ojol2" class="flex justify-center pb-28">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+        </div>
+    </div>
+    <footer class="pt-20 bg-f6/30">
+        <div id="footerbwah" class="flex flex-row justify-around pb-16">
+            <div id="address" class="flex flex-col gap-3">
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <div class="gap-0">
+                    <p class="text-f5/60 text-[15px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[50%] text-f5/60 text-[10px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                </div>
+            </div>
+            <div id="Contact" class="flex flex-col gap-6">
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full pr-10">Contact Us:</p>
+                <div class="gap-0">
+                    <p class="text-f5/60">Info@JusSegar.id</p>
+                    <p class="text-f5/60 text-lg w-full">+6281369693636</p>
+                </div>
+                <div id="sosmed" class="flex flex-row gap-3">
+                    <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-instagram text-[25px] text-f5/80' ></i>
+                    <i class='bx bxl-youtube text-[25px] text-f5/80' ></i>
+                </div>
+            </div>
+        </div>
+        <div id="copyright" class="bg-f6/50 w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
+        </div>
+    </footer>
 </body>
+<script src="Function.js"></script>
 </html>
