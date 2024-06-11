@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jus Buah Segar - 5 Fakta Menarik Jus Buah</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/output.css">    
+    <link rel="stylesheet" href="assets/css/output.css">
+    <title>Jus Buah Segar - Article</title>
 </head>
 <body>
-    <header class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
-        <div class="flex justify-between items-center py-8 px-32">
-            <a href="index.html"><img src="assets/images/logo baru.png" alt="" class="h-[75px]"></a>
+    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
+        <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-center">
+            <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
+            <div class="md:hidden block" onclick="showHideMenu()">
+                <i class="bx bx-menu text-4xl dark:text-white"></i>
+            </div>
+            <div id="menu"
+            class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center  items-center gap-80 md:gap-80 bg-white">
             <nav>
-            <ul class="flex gap-10">
-                <li class="text-lg text-f2 "><a href="index.html">Home</li></a>
-                <li class="text-lg text-f2"><a href="about.html"> About</li></a>
-                <li class="text-lg text-f2"><a href="products.html"> Products</li></a>   
-                <li class="text-lg text-f2"><a href="location.html"> Locations</li></a>
-                <li class="text-lg text-f2"><a href="contact.html"> Contact</li></a>
-                <li class="text-lg text-f1 font-semibold"><a href="article.html"> Article</li></a>  
-            </ul>
-        </nav>
-    </div>
+                <ul class="flex gap-10 flex-col md:flex md:flex-row text-center justify-center items-center ">
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
+                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
+                </ul>
+            </nav>
+        </div>
+        </div>
     </header>
     <main>
         <section class="px-12 py-40">
             <div id="foto" class="flex justify-center">
-                <img src="assets/images/5faktaGede.png" alt="" class="h-[500px]">
+                <img src="assets/images/5faktaGede.png" alt="" class="md:h-[500px]  w-full md:w-[500px]">
             </div>
-            <div class="flex justify-center py-20">
-                <h1 class="text-5xl font-bold text-f1">5 Fakta Menarik Jus Buah</h1>
+            <div class="flex justify-center md:py-20 py-10">
+                <h1 class="md:text-5xl text-3xl font-bold text-f1">5 Fakta Menarik Jus Buah</h1>
             </div>
         </section>
-        <section id="1" class="py-10 px-14">
+        <section id="1" class="md:py-10 py-1 px-14">
             <div class="flex flex-col gap-10">
                 <h2 class="text-f5 text-4xl font-bold w-[80%]">Kandungan Nutrisi</h2>
                 <p class="text-xl font-normal w-[75%] text-f5">Jus buah mengandung berbagai vitamin dan mineral penting seperti vitamin C, vitamin A, kalium, dan folat. Vitamin C, misalnya, dikenal dapat meningkatkan sistem kekebalan tubuh dan mendukung kesehatan kulit.</p>
@@ -76,7 +83,7 @@
             <div class="py-10">
                 <p class="text-xl px-14">Related Posts</p>
             </div>
-            <div class="flex flex-row justify-around items-center">
+            <div class="flex md:flex-row justify-around items-center flex-col">
                 <div class="flex flex-col gap-3">
                     <img src="assets/images/markisa.png" alt="" class="w-[250px]">
                     <p>Fakta Tentang Buah Markisa</p>
@@ -94,31 +101,6 @@
                 </div>
             </div>
          </section>
-         <!-- <footer class="pt-20 bg-f6/30">
-            <div id="footerbwah" class="flex flex-row justify-around pb-16">
-                <div id="address" class="flex flex-col gap-3">
-                    <p class="capitalize text-3xl tracking-wider text-f5 opacity-60 font-medium">address :</p>
-                    <div class="gap-0">
-                        <p class="text-f5/60 ">Jus Segar</p>
-                        <p class="w-[50%] text-f5/60 ">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
-                    </div>
-                </div>
-                <div id="Contact" class="flex flex-col gap-6">
-                    <p class="capitalize text-3xl tracking-wider text-f5 opacity-60 font-medium">Contact Us :</p>
-                    <div class="gap-0">
-                        <p class="text-f5/60 ">Info@JusSegar.id</p>
-                        <p class="text-f5/60 ">+62 81369693636</p>
-                    </div>
-                    <div id="sosmed" class="flex flex-row gap-3">
-                        <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                        <i class='bx bxl-instagram text-[25px] text-f5/80' ></i>
-                        <i class='bx bxl-youtube text-[25px] text-f5/80' ></i>
-                    </div>
-                </div>
-            </div>
-            <div id="copyright" class="bg-f6/50 py-8 px-[10.5rem]">
-                <p class="uppercase text-f5/60 items-center">&copy;2024 Jus Segar. All right reserved</p>
-            </div>
-        </footer> -->
 </body>
+<script src="Function.js"></script>
 </html>
