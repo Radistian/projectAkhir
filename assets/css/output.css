@@ -8317,14 +8317,6 @@ html:has(.drawer-open.drawer-open) {
   top: 10rem;
 }
 
-.bottom-4 {
-  bottom: 1rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -8497,11 +8489,6 @@ html:has(.drawer-open.drawer-open) {
   height: 350px;
 }
 
-.size-\[550px\] {
-  width: 550px;
-  height: 550px;
-}
-
 .h-1\/3 {
   height: 33.333333%;
 }
@@ -8528,10 +8515,6 @@ html:has(.drawer-open.drawer-open) {
 
 .h-\[150px\] {
   height: 150px;
-}
-
-.h-\[250px\] {
-  height: 250px;
 }
 
 .h-\[260px\] {
@@ -8562,10 +8545,6 @@ html:has(.drawer-open.drawer-open) {
   height: 600px;
 }
 
-.h-\[700px\] {
-  height: 700px;
-}
-
 .h-\[75px\] {
   height: 75px;
 }
@@ -8576,10 +8555,6 @@ html:has(.drawer-open.drawer-open) {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-4\/5 {
@@ -8654,6 +8629,10 @@ html:has(.drawer-open.drawer-open) {
   width: 40%;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .w-\[420px\] {
   width: 420px;
 }
@@ -8716,14 +8695,6 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .flex-shrink {
@@ -9848,14 +9819,6 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-bg1 {
-  background-image: url('../images/bgtesti.png');
-}
-
-.bg-bgJus {
-  background-image: url('../images/bgJus.png');
-}
-
 .bg-bgProduk {
   background-image: url('../images/bgProduk.png');
 }
@@ -9949,10 +9912,6 @@ html:has(.drawer-open.drawer-open) {
   background-origin: content-box;
 }
 
-.fill-current {
-  fill: currentColor;
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -10040,11 +9999,6 @@ html:has(.drawer-open.drawer-open) {
   padding-right: 2.25rem;
 }
 
-.px-\[10\.5rem\] {
-  padding-left: 10.5rem;
-  padding-right: 10.5rem;
-}
-
 .px-\[10rem\] {
   padding-left: 10rem;
   padding-right: 10rem;
@@ -10112,6 +10066,10 @@ html:has(.drawer-open.drawer-open) {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pb-28 {
@@ -10363,10 +10321,6 @@ html:has(.drawer-open.drawer-open) {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-\[65px\] {
-  line-height: 65px;
-}
-
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -10437,6 +10391,11 @@ html:has(.drawer-open.drawer-open) {
 .text-f7 {
   --tw-text-opacity: 1;
   color: rgb(255 190 4 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -10681,11 +10640,6 @@ html:has(.drawer-open.drawer-open) {
 
 .ring-inset {
   --tw-ring-inset: inset;
-}
-
-.ring-gray-200 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
 .blur {
@@ -10994,6 +10948,10 @@ html:has(.drawer-open.drawer-open) {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -11015,20 +10973,12 @@ html:has(.drawer-open.drawer-open) {
     height: 3rem;
   }
 
-  .md\:h-2\/3 {
-    height: 66.666667%;
-  }
-
   .md\:h-\[150px\] {
     height: 150px;
   }
 
   .md\:h-\[250px\] {
     height: 250px;
-  }
-
-  .md\:h-\[400px\] {
-    height: 400px;
   }
 
   .md\:h-\[500px\] {
@@ -11039,6 +10989,14 @@ html:has(.drawer-open.drawer-open) {
     height: 700px;
   }
 
+  .md\:h-2\/3 {
+    height: 66.666667%;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -11047,8 +11005,20 @@ html:has(.drawer-open.drawer-open) {
     width: 75%;
   }
 
+  .md\:w-\[1200px\] {
+    width: 1200px;
+  }
+
   .md\:w-\[150px\] {
     width: 150px;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-\[320px\] {
+    width: 320px;
   }
 
   .md\:w-\[350px\] {
@@ -11061,10 +11031,6 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:w-\[400px\] {
     width: 400px;
-  }
-
-  .md\:w-\[500px\] {
-    width: 500px;
   }
 
   .md\:w-\[520px\] {
@@ -11127,6 +11093,10 @@ html:has(.drawer-open.drawer-open) {
     border-top-width: 7px;
   }
 
+  .md\:bg-bg1 {
+    background-image: url('../images/bgtesti.png');
+  }
+
   .md\:bg-bgJus {
     background-image: url('../images/bgJus.png');
   }
@@ -11139,6 +11109,11 @@ html:has(.drawer-open.drawer-open) {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:px-\[10\.5rem\] {
+    padding-left: 10.5rem;
+    padding-right: 10.5rem;
   }
 
   .md\:py-0 {
@@ -11159,6 +11134,11 @@ html:has(.drawer-open.drawer-open) {
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .md\:text-center {

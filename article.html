@@ -37,7 +37,7 @@
                 <div class="flex flex-col md:gap-20 gap-5 md:w-3/4 w-full">
                     <a href="article1.html"><p class="md:text-2xl text-xl font-semibold text-f5 capitalize tracking-wider hover:text-green-500 hover:transition-all hover:italic">5 fakta menarik tentang jus buah</p></a>
                     <a href="article1.html"><p class="text-xl font-normal md:w-[40%] w-full text-f5/65 "> Suka mengkonsumsi jus buah? Apakah sobat tau fakta tentang jus buah mari kami beri tahu.</p></a>
-                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i class='bx bx-heart text-[25px] relative left-3'></i></p>
+                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i id="like" class='bx bx-heart text-[25px] relative left-3 text-red-500' onclick="like()"></i></p>
                 </div>
             </div>
             <div id="markisa" class="flex md:gap-10 md:py-20 w-full flex-col md:flex-row items-start">
@@ -45,7 +45,7 @@
                 <div class="flex flex-col md:gap-20 gap-5 md:w-3/4 w-full">
                     <a href="article2.html"><p class="md:text-2xl text-xl font-semibold text-f5 capitalize tracking-wider hover:text-green-500 hover:transition-all hover:italic">Fakta tentang buah markisa</p></a>
                     <a href="article2.html"><p class="text-xl font-normal md:w-[40%] w-full text-f5/65">Buah markisa memiliki nama latin Passiflora edulis, buah yang terkenal asam ini berbentuk buah berair yang berbiji. walaupun rasanya asam buah ini memiliki banyak manfaat. Berikut 6 manfaat buah markisa untuk kesehatan tubuh kita:</p></a>
-                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i class='bx bx-heart text-[25px] relative left-3'></i></p>
+                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i id="like2" class='bx bx-heart text-[25px] relative left-3 text-red-500' onclick="like2()"></i></p>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
                 <div class="flex flex-col md:gap-20 gap-5 md:w-3/4 w-full">
                     <a href="article3.html"><p class="md:text-2xl text-xl font-semibold text-f5 capitalize tracking-wider hover:text-green-500 hover:transition-all hover:italic">Buah yang mengenyangkan? Pisang jawabannya</p></a>
                     <a href="article3.html"><p class="text-xl font-normal md:w-[40%] w-full text-f5/65">Anda bisa mengandalkan pisang sebagai salah satu sumber karbohidrat tanpa takut gemuk. Ya, si buah kuning ini punya kandungan karbohidrat dan serat yang tinggi, jadi bisa membuat Anda kenyang lebih lama.</p></a>
-                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i class='bx bx-heart text-[25px] relative left-3'></i></p>
+                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i id="like3" class='bx bx-heart text-[25px] relative left-3 text-red-500' onclick="like3()"></i></p>
                 </div>
             </div>
             <div id="nanas" class="flex md:gap-10 md:py-20 w-full flex-col md:flex-row items-start">
@@ -62,13 +62,13 @@
                 <div class="flex flex-col md:gap-20 gap-5 md:w-3/4 w-full">
                     <a href="article4.html"><p class="md:text-2xl text-xl font-semibold text-f5 capitalize tracking-wider hover:text-green-500 hover:transition-all hover:italic">Radang karena perubahan cuaca? minum jus buah ini</p></a>
                     <a href="article4.html"><p class="text-xl font-normal md:w-[40%] w-full text-f5/65">Untuk memanfaatkan buah nanas sebagai obat mengatasi penyakit batuk, biasanya dibuat jus dengan menambahkan beberapa bahan lainnya.</p></a>
-                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i class='bx bx-heart text-[25px] relative left-3'></i></p>
+                    <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i id="like4" class='bx bx-heart text-[25px] relative left-3 text-red-500' onclick="like4()"></i></p>
                 </div>
             </div>
         </div>
          
         </section>
-        <div class="join flex justify-center py-10">
+        <div class="join flex justify-center py-6">
             <input class="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
             <input class="join-item btn btn-square" type="radio" name="options" aria-label="2" />
             <input class="join-item btn btn-square" type="radio" name="options" aria-label="3" />
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+        <div id="copyright" class="bg-f6/50 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
             <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
