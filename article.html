@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="assets/css/output.css">
     <title>Jus Buah Segar - Article</title>
 </head>
-<body>
-    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
+<body class="dark:bg-df1 dark:text-white">
+    <header id="topHeader" class=" dark:bg-df2 w-full fixed right-0 left-0 shadow-lg z-[9999] bg-white">
         <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-center">
             <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
             <div class="md:hidden block" onclick="showHideMenu()">
                 <i class="bx bx-menu text-4xl dark:text-white"></i>
             </div>
             <div id="menu"
-            class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 md:gap-80 bg-white">
+            class=" dark:bg-df2 hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 md:gap-80 bg-white">
             <nav>
                 <ul class="flex gap-10 flex-col md:flex md:flex-row text-center justify-center items-center ">
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
-                    <li class="text-lg text-f1 font-semibold"><a href="#"> Article</li></a>  
+                    <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
+                    <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
+                    <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
+                    <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
+                    <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
+                    <li class="text-lg text-f1 dark:text-f3 font-semibold"><a href="#"> Article</li></a>  
                 </ul>
             </nav>
         </div>
@@ -31,7 +31,54 @@
     </header>
     <main>
         <section class="py-40 px-20">
-            <p class="md:text-7xl text-6xl flex justify-center font-bold text-f4 uppercase tracking-widest py-14 md:py-0">Article</p>
+            <!-- <div class="border border-slate-300 rounded-xl shadow-lg w-[500px] h-[500px]">
+                <img src="assets/images/5fakta.png" alt="" class="size-[300px] ">
+                <p class="text-xl text-f3 font-semibold capitalize">Suka mengkonsumsi jus buah?</p>
+                <p class="w-[60%]">Penasaran dengan faktanya? ada di bawah sini sob...</p>
+                <p>Read More<i class='bx bx-chevron-right'></i></p>
+            </div> -->
+            <div class="flex flex-col gap-10">
+                <div class="flex flex-row justify-around">
+                    <div class="px-20 bg-white dark:bg-df2 rounded-xl size-[500px] border border-slate-400 shadow-lg flex justify-center flex-col gap-4">
+                        <img src="assets/images/5fakta.png" alt="" class="size-[300px] items-center">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-xl text-f3 font-semibold capitalize">Suka mengkonsumsi jus buah?</p>
+                            <p class="w-[60%]">Penasaran dengan faktanya? ada di bawah sini sob...</p>
+                        </div>
+                        <a href="article1.html" class="font-semibold"><p>Read More<i class='bx bx-chevron-right'></i></p></a>
+                    </div>
+                    <div class="px-20 bg-white dark:bg-df2 rounded-xl size-[500px] border border-slate-400 shadow-lg flex justify-center flex-col gap-4">
+                        <img src="assets/images/markisa.png" alt="" class="size-[280px] items-center">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-xl text-f3 font-semibold capitalize">Nama lain dari buah markisa</p>
+                            <p class="w-[70%]">Buah markisa memiliki nama latin Passiflora edulis, buah yang terkenal...
+                        </div>
+                        </p>
+                        <a href="article2.html" class="font-semibold"><p>Read More<i class='bx bx-chevron-right'></i></p></a>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-around">
+                    <div class="px-20 bg-white dark:bg-df2 rounded-xl size-[500px] border border-slate-400 shadow-lg flex justify-center flex-col gap-4">
+                        <img src="assets/images/artc3.png" alt="" class="size-[270px] items-center">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-xl text-f3 font-semibold capitalize w-[80%]">Buah yang mengenyangkan?Pisang jawabnya
+                            </p>
+                            <p class="w-[90%]">Anda bisa mengandalkan pisang sebagai salah satu sumber karbohidrat tanpa takut...
+                            </p>
+                        </div>
+                        <a href="article3.html" class="font-semibold"><p>Read More<i class='bx bx-chevron-right'></i></p></a>
+                    </div>
+                    <div class="px-20 bg-white dark:bg-df2 rounded-xl size-[500px] border border-slate-400 shadow-lg flex justify-center flex-col gap-4">
+                        <img src="assets/images/artc4.png" alt="" class="size-[280px] items-center">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-xl text-f3 font-semibold capitalize">Fakta tentang buah nanas.</p>
+                            <p class="w-[85%]">Rasanya yang asam manis, membuat buah ini cocok untuk hidangan penutup...</p>
+                        </div>
+                        <a href="article4.html" class="font-semibold"><p>Read More<i class='bx bx-chevron-right'></i></p></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <p class="md:text-7xl text-6xl flex justify-center font-bold text-black uppercase tracking-widest py-14 md:py-0">Article</p>
             <div id="faktaJus" class="flex md:gap-10 md:py-20 w-full flex-col md:flex-row items-start">
                 <a href="article1.html" class="md:w-[400px] w-[300px]  rounded-lg relative right-8 py-14 md:py-0"><img src="assets/images/5fakta.png" alt="" class="hover:transition-all"></a>
                 <div class="flex flex-col md:gap-20 gap-5 md:w-3/4 w-full">
@@ -65,8 +112,7 @@
                     <p class="capitalize text-xl md:text-2xl font-light tracking-wide bg-slate-200/45 p-1 md:w-[80%] w-full">do you like it?<i id="like4" class='bx bx-heart text-[25px] relative left-3 text-red-500' onclick="like4()"></i></p>
                 </div>
             </div>
-        </div>
-         
+        </div> -->
         </section>
         <div class="join flex justify-center py-6">
             <input class="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
@@ -75,42 +121,45 @@
             <input class="join-item btn btn-square" type="radio" name="options" aria-label="4" />
           </div>
     </main>
-    <div id="pesensekarang" class="py-36">
-        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+    <div id="pesensekarang" class="py-40">
+        <p class="md:text-7xl text-black dark:text-white font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
         <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
             <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
-            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[300px] w-full pr-9 px-9">
         </div>
         <div id="ojol2" class="flex justify-center pb-28">
-            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[320px] w-full pr-9 px-9">
         </div>
     </div>
-    <footer class="pt-20 bg-f6/30">
+    <footer class="pt-20 bg-f3/50">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium md:px-0 px-6">address:</p>
                 <div class="gap-5">
-                    <p class="text-f5/60 text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
-                    <p class="w-[75%] md:w[50%] text-f5/60 text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                    <p class="text-white text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[75%] md:w[50%] text-white text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
             </div>
             <div id="Contact" class="flex flex-col gap-4">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full">Contact Us:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium w-full">Contact Us:</p>
                 <div class="gap-10">
-                    <p class="text-f5/60 ">Info@JusSegar.id</p>
-                    <p class="text-f5/60 text-lg pr-5">+6281369693636</p>
+                    <p class="text-white ">Info@JusSegar.id</p>
+                    <p class="text-white text-lg pr-5">+6281369693636</p>
                 </div>
                 <div id="sosmed" class="flex flex-row gap-3">
-                    <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-instagram text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-youtube text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-facebook-square text-[25px] text-white '></i>
+                    <i class='bx bxl-instagram text-[25px] text-white'></i>
+                    <i class='bx bxl-youtube text-[25px] text-white' ></i>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
-            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
+        <div id="copyright" class="bg-f3/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-white items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
+    <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring ring-gray-200" onclick="switchDark()">
+        <i id="iconDark" class="bx bxs-moon text-4xl text-white dark:text-df1"></i>
+    </div>
 </body>
 </html> 
 

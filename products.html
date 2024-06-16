@@ -7,30 +7,80 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Jus Buah Segar - Products</title>
 </head>
-<body>
-    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white transition-all">
+<body class="dark:bg-df1">
+    <header id="topHeader" class="w-full fixed right-0 left-0 shadow-lg dark:bg-df2 z-[9999] bg-white transition-all">
         <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-cenn[ter">
         <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
         <div class="md:hidden block" onclick="showHideMenu()">
             <i class="bx bx-menu text-4xl dark:text-white"></i>
         </div>
-        <div id="menu"
-        class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 bg-white">
+        <div id="menu" class="dark:bg-df2 hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 bg-white">
         <nav>
             <ul class="flex gap-9 flex-col md:flex md:flex-row text-center justify-center items-center ">
-                <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
-                <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
-                <li class="text-lg text-f1 font-semibold"><a href="#"> Products</li></a>   
-                <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
-                <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
-                <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
+                <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
+                <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
+                <li class="text-lg text-f1 dark:text-f3 font-semibold"><a href="#"> Products</li></a>   
+                <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
+                <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
+                <li class="text-lg text-f2 dark:text-white hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
             </ul>
         </nav>
     </div>
     </div>
     </header>
-    <main>
-        <section class="px-16 py-28 bg-bgProduk w-full">
+    <main class="">
+        <section class="px-24 py-36">
+            <div class="flex flex-row gap-28 px-24">
+                <div id="kotak1" class="bg-f3/55 rounded-[30px]  w-[350px] flex flex-col justify-center items-center gap-4 p-20 ">
+                    <img src="assets/images/gelas1.png" alt="" class="w-[400px]"> 
+                    <h2 class="text-2xl text-f1 dark:text-white font-bold text-center">Avocado</h2>
+                    <p class="text-black dark:text-f1 text-xl font-semibold text-center">Healthy & Fresh</p>
+                </div>
+                <div class="flex flex-col gap-16">
+                    <div class="grid grid-cols-2 gap-32">
+                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
+                            <img src="assets/images/gelas2.png" alt="" class="w-[150px]">
+                            <p class="text-2xl text-f1 dark:text-white font-bold">Strawberry</p>
+                        </div>
+                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-">
+                            <img src="assets/images/gelas3.png" alt="" class="w-[250px]">
+                            <p class="text-2xl text-f1 dark:text-white font-bold">Orange</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-32">
+                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-">
+                            <img src="assets/images/gelas4.png" alt="" class="w-[250px]">
+                            <p class="text-2xl text-f1 dark:text-white font-bold">Guava</p>
+                        </div>
+                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-">
+                            <img src="assets/images/gelas5.png" alt="" class="w-[250px]">
+                            <p class="text-2xl text-f1 dark:text-white font-bold">Lemon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-24 py-10">
+                <div class="grid grid-cols-4 gap-14">
+                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                        <img src="assets/images/gelas6.png" alt="" class="w-[200px]">
+                        <p class="text-2xl text-f1 dark:text-white font-bold">Grape</p>
+                    </div>
+                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                        <img src="assets/images/gelas7.png" alt="" class="w-[200px]">
+                        <p class="text-2xl text-f1 dark:text-white font-bold">Banana</p>
+                    </div>
+                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                        <img src="assets/images/gelas 8.png" alt="" class="w-[200px]">
+                        <p class="text-2xl text-f1 dark:text-white font-bold">Dragonfruit</p>
+                    </div>
+                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                        <img src="assets/images/gelas9.png" alt="" class="w-[200px]">
+                        <p class="text-2xl text-f1 dark:text-white font-bold">Tomato</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="px-16 py-28 bg-bgProduk w-full">
             <p class="text-6xl md:text-7xl flex justify-center font-bold text-f4 uppercase tracking-widest py-20">Product</p>
             <div class="grid md:grid-cols-3 grid-cols-1 gap-y-28">
                 <div id="kotak1" class=" bg-f9 rounded-3xl md:w-[400px] md:h-[400px] shadow-lg w-full h-[400px]">
@@ -106,44 +156,47 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <div id="pesensekarang" class="py-36">
-        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+    <div id="pesensekarang" class="py-40">
+        <p class="md:text-7xl text-black dark:text-white font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
         <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
             <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
-            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[300px] w-full pr-9 px-9">
         </div>
         <div id="ojol2" class="flex justify-center pb-28">
-            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[320px] w-full pr-9 px-9">
         </div>
     </div>
-    <footer class="pt-20 bg-f6/30">
+    <footer class="pt-20 bg-f3/50">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium md:px-0 px-6">address:</p>
                 <div class="gap-5">
-                    <p class="text-f5/60 text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
-                    <p class="w-[75%] md:w[50%] text-f5/60 text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                    <p class="text-white text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[75%] md:w[50%] text-white text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
             </div>
             <div id="Contact" class="flex flex-col gap-4">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full">Contact Us:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium w-full">Contact Us:</p>
                 <div class="gap-10">
-                    <p class="text-f5/60 ">Info@JusSegar.id</p>
-                    <p class="text-f5/60 text-lg pr-5">+6281369693636</p>
+                    <p class="text-white ">Info@JusSegar.id</p>
+                    <p class="text-white text-lg pr-5">+6281369693636</p>
                 </div>
                 <div id="sosmed" class="flex flex-row gap-3">
-                    <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-instagram text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-youtube text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-facebook-square text-[25px] text-white '></i>
+                    <i class='bx bxl-instagram text-[25px] text-white'></i>
+                    <i class='bx bxl-youtube text-[25px] text-white' ></i>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
-            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
+        <div id="copyright" class="bg-f3/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-white items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
+    <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring ring-gray-200" onclick="switchDark()">
+        <i id="iconDark" class="bx bxs-moon text-4xl text-white dark:text-df1"></i>
+    </div>
 </body>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
 <script src="Function.js"></script> 

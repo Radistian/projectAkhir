@@ -13,11 +13,18 @@ module.exports = {
         f7:"#FFBE04",
         f8:"#66CF8A",
         f9:"#8FBC8F",
+        df1:"#3D3B40",
+        df2:"#5F566D",
       },
       backgroundImage:{
         bg1:"url('../images/bgtesti.png')",
-        bgJus:"url('../images/bgJus.png')",
+        bgJus:"url('../images/bgJusOren.png')",
         bgProduk:"url('../images/bgProduk.png')",
+        bgkontak:"url('../images/bgContact.png')",
+        bgkontakD:"url('../images/bgContactDark.png')",
+        bgTestiDark:"url('../images/testiDark.png')",
+        bgTesti:"url('../images/testiBaru.png')",
+        bgProdukD:"url('../images/bgProdukDark.png')",
       }
     },
   },
@@ -26,7 +33,7 @@ module.exports = {
   ],
   darkMode:'class',
   daisyui: {
-    themes: [], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "light", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components

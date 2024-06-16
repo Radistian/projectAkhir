@@ -7,30 +7,71 @@
     <link rel="stylesheet" href="assets/css/output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white transition-all">
+<body class="dark:bg-df1 dark:text-white">
+    <header id="topHeader" class="w-full fixed right-0 left-0 shadow-lg dark:bg-df2 z-[9999] bg-white transition-all">
         <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-cenn[ter">
         <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
         <div class="md:hidden block" onclick="showHideMenu()">
             <i class="bx bx-menu text-4xl dark:text-white"></i>
         </div>
         <div id="menu"
-        class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 bg-white">
+        class="hidden dark:bg-df2 md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 bg-white">
         <nav>
             <ul class="flex gap-9 flex-col md:flex md:flex-row text-center justify-center items-center ">
-                <li class="text-lg text-f2  hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
-                <li class="text-lg text-f2  hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
-                <li class="text-lg text-f2  hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
-                <li class="text-lg text-f2  hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
-                <li class="text-lg text-f1 font-semibold"><a href="#"> Contact</li></a>
-                <li class="text-lg text-f2  hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
+                <li class="text-lg text-f2 dark:text-white  hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
+                <li class="text-lg text-f2 dark:text-white  hover:text-green-500 hover:transition-all"><a href="about.html"> About</li></a>
+                <li class="text-lg text-f2 dark:text-white  hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
+                <li class="text-lg text-f2 dark:text-white  hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
+                <li class="text-lg text-f1 dark:text-f3 font-semibold"><a href="#"> Contact</li></a>
+                <li class="text-lg text-f2 dark:text-white  hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
             </ul>
         </nav>
     </div>
     </div>
     </header>
     <main>
-        <section class="py-40">
+        <section class="py-56 flex justify-around bg-bgkontak dark:bg-bgkontakD">
+            <div class="flex flex-col gap-16">
+                <p class="text-6xl font-bold tracking-widest">Contact Us</p>
+                <div class="flex flex-row gap-2">
+                    <div class="flex flex-col gap-5">
+                        <i class='bx bxl-facebook-square text-[40px]'></i>
+                        <i class='bx bxl-instagram text-[40px]' ></i>
+                        <i class='bx bx-envelope text-[40px]' ></i>
+                    </div>
+                    <div class="flex flex-col gap-7">
+                        <p class="font-semibold text-2xl">@JusBuah</p>
+                        <p class="font-semibold text-2xl">@JusBuah</p>
+                        <p class="font-semibold text-2xl">+62 81369693636</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl w-[40%]">
+                <form action="" class="px-12 bg-slate-100 dark:bg-df1 rounded-lg h-[400px] items-center">
+                    <div class="flex gap-4 items-center justify-between">
+                        <div class="flex flex-col">
+                            <label for="name" class="py-2">First Name</label>
+                            <input type="text" id="name" required class="px-8 py-2 rounded-xl outline outline-1" placeholder="First Name">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="last" class="py-2">Last Name</label>
+                            <input type="text" id="last" required class="rounded-xl px-8 py-2 outline outline-1" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col">
+                            <label for="email" class="py-2">Email</label>
+                            <input type="email" id="email" required class="rounded-xl px-8 py-2 outline outline-1" placeholder="example@gmail.com">
+                        </div>
+                        <textarea name="" id="" class="rounded-xl py-4 px-4 outline outline-1" placeholder="Add Your Comment"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center w-full py-10">
+                        <button class="bg-transparent outline outline-1  flex justify-center rounded-lg py-2 w-[150px]">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- <section class="py-40">
             <p class="md:text-7xl text-5xl flex justify-center font-bold text-f4 uppercase tracking-widest">Contact Us</p>
             <div class="flex justify-center ">
                 <div class="grid md:grid-cols-3 grid-cols-1 gap-20 py-20 md:px-24 px-0">
@@ -60,45 +101,48 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- ...................................... -->
-    <div id="pesensekarang" class="py-36">
-        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+    <div id="pesensekarang" class="py-40">
+        <p class="md:text-7xl text-black dark:text-white font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
         <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
             <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
-            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[300px] w-full pr-9 px-9">
         </div>
         <div id="ojol2" class="flex justify-center pb-28">
-            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[320px] w-full pr-9 px-9">
         </div>
     </div>
-    <footer class="pt-20 bg-f6/30">
+    <footer class="pt-20 bg-f3/50">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium md:px-0 px-6">address:</p>
                 <div class="gap-5">
-                    <p class="text-f5/60 text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
-                    <p class="w-[75%] md:w[50%] text-f5/60 text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                    <p class="text-white text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[75%] md:w[50%] text-white text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
             </div>
             <div id="Contact" class="flex flex-col gap-4">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full">Contact Us:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium w-full">Contact Us:</p>
                 <div class="gap-10">
-                    <p class="text-f5/60 ">Info@JusSegar.id</p>
-                    <p class="text-f5/60 text-lg pr-5">+6281369693636</p>
+                    <p class="text-white ">Info@JusSegar.id</p>
+                    <p class="text-white text-lg pr-5">+6281369693636</p>
                 </div>
                 <div id="sosmed" class="flex flex-row gap-3">
-                    <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-instagram text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-youtube text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-facebook-square text-[25px] text-white '></i>
+                    <i class='bx bxl-instagram text-[25px] text-white'></i>
+                    <i class='bx bxl-youtube text-[25px] text-white' ></i>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
-            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
+        <div id="copyright" class="bg-f3/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-white items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
+    <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring ring-gray-200" onclick="switchDark()">
+        <i id="iconDark" class="bx bxs-moon text-4xl text-white dark:text-df1"></i>
+    </div>
 </body>
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  

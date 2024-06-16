@@ -80,3 +80,16 @@ function like4() {
         document.getElementById('like4').classList.add('bx-heart')
     }
 }
+
+function switchDark(){
+    const dark = document.documentElement.classList.toggle('dark')
+    console.log(dark);
+    if (dark == true) {
+        document.getElementById('iconDark').classList.remove('bxs-moon')
+        document.getElementById('iconDark').classList.add('bxs-sun')
+    }
+    else{
+        document.getElementById('iconDark').classList.add('bxs-moon')
+        document.getElementById('iconDark').classList.remove('bxs-sun')
+    }
+    }

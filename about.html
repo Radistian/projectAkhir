@@ -7,23 +7,23 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Jus Buah Segar - About</title>
 </head>
-<body>
-    <header id="topHeader" class="w-full fixed right-0 left-0 border-b border-slate z-[9999] bg-white">
+<body class="dark:bg-df1 dark:text-white">
+    <header id="topHeader" class="w-full fixed right-0 left-0 shadow-lg z-[9999] bg-white dark:bg-df2">
         <div class="flex justify-between items-center gap-16 py-6 w-4/5 m-auto flex-wrap md:text-center">
             <img src="assets/images/logo baru.png" alt="" class="h-[75px]">
             <div class="md:hidden block" onclick="showHideMenu()">
                 <i class="bx bx-menu text-4xl dark:text-white"></i>
             </div>
             <div id="menu"
-            class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 md:gap-80 bg-white">
+            class="hidden md:flex flex-col md:flex-row basis-auto grow justify-center items-center gap-80 md:gap-80 dark:bg-df2 bg-white">
             <nav>
                 <ul class="flex gap-10 flex-col md:flex md:flex-row text-center justify-center items-center ">
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
-                    <li class="text-lg text-f1 font-semibold"><a href="#"> About</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
-                    <li class="text-lg text-f2 hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
+                    <li class="text-lg dark:text-white text-f2 hover:text-green-500 hover:transition-all"><a href="index.html">Home</li></a>
+                    <li class="text-lg dark:text-f3 text-f1 font-semibold"><a href="#"> About</li></a>
+                    <li class="text-lg dark:text-white text-f2 hover:text-green-500 hover:transition-all"><a href="products.html"> Products</li></a>   
+                    <li class="text-lg dark:text-white text-f2 hover:text-green-500 hover:transition-all"><a href="location.html"> Locations</li></a>
+                    <li class="text-lg dark:text-white text-f2 hover:text-green-500 hover:transition-all"><a href="contact.html"> Contact</li></a>
+                    <li class="text-lg dark:text-white text-f2 hover:text-green-500 hover:transition-all"><a href="article.html"> Article</li></a>  
                 </ul>
             </nav>
         </div>
@@ -32,23 +32,43 @@
     <main>
        <section id="about" class="w-full min-h-screen pt-40 py-6 px-12">
         <div id="abouttxt" class="flex md:flex-row gap-12 flex-col">
-            <img src="assets/images/whyus1.png" alt="" class="md:h-[700px] rounded-3xl w-full">
+            <img src="assets/images/whyus1.png" alt="" class="md:h-[700px] md:w-[400px] rounded-3xl w-full">
             <div class="flex flex-col justify-center gap-10">
-                <p class="md:text-5xl text-3xl text-f5">About Fresh Juice</p>
-                <p class="text-f5 md:text-xl md:w-[55%] leading-relaxed w-full text-lg">Jus buah segarr didirikan pada tahun 2003, berawal dari satu cabang berlokasi nagoya cibitung, bekasi. Bermulakan hanya dengan 25 pegawai, kami mempunyai mimpi untuk menyediakan jus berkualitas dan menyehatkan  bagi masyarakat sekitar dengan harga terjangkau.</p>
+                <p class="md:text-5xl text-3xl text-f3">About Fresh Juice</p>
+                <p class=" md:text-xl md:w-[55%] leading-relaxed w-full text-lg">Jus buah segarr didirikan pada tahun 2003, berawal dari satu cabang berlokasi nagoya cibitung, bekasi. Bermulakan hanya dengan 25 pegawai, kami mempunyai mimpi untuk menyediakan jus berkualitas dan menyehatkan  bagi masyarakat sekitar dengan harga terjangkau.</p>
             </div>
         </div>
        </section>
        <section id="whychooseus" class="w-full min-h-screen pt-40 py-6 px-12">
         <div class="flex md:flex-row gap-12 flex-col-reverse">
             <div class="flex flex-col justify-center gap-10">
-            <p class="md:text-5xl text-f5 capitalize text-2xl">Kenapa harus memilih kami?</p>
-            <p class="text-f5 md:text-xl md:w-[65%] leading-relaxed w-full text-lg">Karena kami mempunyai visi miisi untuk menyehatkan masyarakaat dengan menggunaka gula asli dan menggunakan bahan bahan yang fresh sehungga membuat masyarakat menjadi senang, dan harga kami terjangkau.</p>
+            <p class="md:text-5xl text-f3 capitalize text-2xl">Kenapa harus memilih kami?</p>
+            <p class="md:text-xl md:w-[65%] leading-relaxed w-full text-lg">Karena kami mempunyai visi miisi untuk menyehatkan masyarakaat dengan menggunaka gula asli dan menggunakan bahan bahan yang fresh sehungga membuat masyarakat menjadi senang, dan harga kami terjangkau.</p>
             </div>
                 <img src="assets/images/kenapaharusmemilihkami.png" alt="" class="md:w-[520px] md:h-[500px] rounded-3xl w-full h-full">
         </div>
        </section>
-       <section id="khasiat" class="w-full min-h-screen pt-40 py-8 px-12 flex flex-row gap-10">
+       <section class="py-12 px-18 w-full">
+            <p class=" capitalize md:text-5xl text-3xl flex justify-center font-bold dark:text-white text-black ">alasan utama untuk datang ke tempat kami</p>
+            <div class="flex flex-row justify-around items-center">
+                <div class="py-12 w-[400px] flex flex-col gap-3">
+                    <img src="assets/images/fresh.png" alt="" class="size-[350px] rounded-xl ">
+                    <p class="text-center text-3xl text-f3 font-bold">Fresh</p>
+                    <p class="w-[375px]">Momen keceriaan kamu adalah semangat kami. Entah itu saat menemukan sesuatu yang baru, meracik, hingga menciptakan minuman segar khusus untukmu.</p>
+                </div>
+                <div class="py-12 w-[400px] flex flex-col gap-3 items-center">
+                    <img src="assets/images/fun.png" alt="" class="size-[350px] rounded-xl ">
+                    <p class="text-center text-3xl text-f3 font-bold">Fun</p>
+                    <p class="w-[350px]">Kami memproduksi minuman berkualitas tinggi, diseduh dari bahan-bahan paling segar, lengkap dengan rasa yang paling nikmat.</p>
+                </div>
+                <div class="py-12 w-[400px] flex flex-col gap-3 items-center">
+                    <img src="assets/images/happy.png" alt="" class="size-[350px] rounded-xl ">
+                    <p class="text-center text-3xl text-f3 font-bold">Happiness</p>
+                    <p class="w-[300px]">Kami menyediakan beragam menu spesial yang bisa diminum sesuai dengan jenis aktivitas kamu..</p>
+                </div>
+            </div>
+       </section>
+       <!-- <section id="khasiat" class="w-full min-h-screen pt-40 py-8 px-12 flex flex-row gap-10">
         <div class="md:border-t-[7px] border-t-f3 p-20 w-[40%] flex flex-col">
         <div class="w-[450px] h-[450px] bg-f3 rounded-full">
             <img src="assets/images/gelaskhasiat.png" alt="" class="relative bottom-8">
@@ -84,45 +104,48 @@
             </div>
         </div>
     </div>
-       </section>
+       </section> -->
     </main>
     
-    <div id="pesensekarang" class="py-36">
-        <p class="md:text-7xl text-f4 font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
+    <div id="pesensekarang" class="py-40">
+        <p class="md:text-7xl dark:text-white text-black font-bold flex justify-center items-center pb-28 text-4xl w-full">PESAN SEKARANG</p>
         <div id="ojol" class="flex md:flex-row justify-around pb-32 flex-col gap-32">
             <img src="assets/images/gofood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
-            <img src="assets/images/shopeefood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/shopeefood.png" alt="" class="md:w-[300px] w-full pr-9 px-9">
         </div>
         <div id="ojol2" class="flex justify-center pb-28">
-            <img src="assets/images/grabfood.png" alt="" class="md:w-[350px] w-full pr-9 px-9">
+            <img src="assets/images/grabfood.png" alt="" class="md:w-[320px] w-full pr-9 px-9">
         </div>
     </div>
-    <footer class="pt-20 bg-f6/30">
+    <footer class="pt-20 bg-f3/50">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium md:px-0 px-6">address:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium md:px-0 px-6">address:</p>
                 <div class="gap-5">
-                    <p class="text-f5/60 text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
-                    <p class="w-[75%] md:w[50%] text-f5/60 text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                    <p class="text-white text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
+                    <p class="w-[75%] md:w[50%] text-white text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
             </div>
             <div id="Contact" class="flex flex-col gap-4">
-                <p class="capitalize md:text-3xl text-xl tracking-wider text-f5 opacity-60 font-medium w-full">Contact Us:</p>
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium w-full">Contact Us:</p>
                 <div class="gap-10">
-                    <p class="text-f5/60 ">Info@JusSegar.id</p>
-                    <p class="text-f5/60 text-lg pr-5">+6281369693636</p>
+                    <p class="text-white ">Info@JusSegar.id</p>
+                    <p class="text-white text-lg pr-5">+6281369693636</p>
                 </div>
                 <div id="sosmed" class="flex flex-row gap-3">
-                    <i class='bx bxl-facebook-square text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-instagram text-[25px] text-f5/80'></i>
-                    <i class='bx bxl-youtube text-[25px] text-f5/80'></i>
+                    <i class='bx bxl-facebook-square text-[25px] text-white '></i>
+                    <i class='bx bxl-instagram text-[25px] text-white'></i>
+                    <i class='bx bxl-youtube text-[25px] text-white' ></i>
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f6/50 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
-            <p class="uppercase text-f5/60 items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
+        <div id="copyright" class="bg-f3/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+            <p class="uppercase text-white items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
+    <div class="p-1 rounded-full fixed bottom-4 left-4 z-2 bg-df2 dark:bg-white ring ring-gray-200" onclick="switchDark()">
+        <i id="iconDark" class="bx bxs-moon text-4xl text-white dark:text-df1"></i>
+    </div>
 </body>
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>  
