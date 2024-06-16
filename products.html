@@ -29,25 +29,27 @@
     </div>
     </header>
     <main class="">
-        <section class="px-24 py-36">
-            <div class="flex flex-row gap-28 px-24">
-                <div id="kotak1" class="bg-f3/55 rounded-[30px]  w-[350px] flex flex-col justify-center items-center gap-4 p-20 ">
-                    <img src="assets/images/gelas1.png" alt="" class="w-[400px]"> 
-                    <h2 class="text-2xl text-f1 dark:text-white font-bold text-center">Avocado</h2>
-                    <p class="text-black dark:text-f1 text-xl font-semibold text-center">Healthy & Fresh</p>
+        <section class="md:px-24 px-12 py-36">
+            <div class="flex md:flex-row flex-col md:gap-28 gap-10 md:px-24 px-0">
+                <div class="m-auto">
+                    <div id="kotak1" class="bg-f3/55 rounded-[30px] md:w-[350px] flex flex-col justify-center items-center md:gap-4 gap-0 md:p-20 p-16">
+                        <img src="assets/images/gelas1.png" alt="" class="w-[400px]"> 
+                        <h2 class="text-2xl text-f1 dark:text-white font-bold text-center">Avocado</h2>
+                        <p class="text-black dark:text-f1 text-xl font-semibold text-center">Healthy & Fresh</p>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-16">
-                    <div class="grid grid-cols-2 gap-32">
+                <div class="flex flex-col md:gap-16 gap-10">
+                    <div class="grid md:grid-cols-2 md:gap-32 gap-10">
                         <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                             <img src="assets/images/gelas2.png" alt="" class="w-[150px]">
                             <p class="text-2xl text-f1 dark:text-white font-bold">Strawberry</p>
                         </div>
-                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-">
+                        <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                             <img src="assets/images/gelas3.png" alt="" class="w-[250px]">
                             <p class="text-2xl text-f1 dark:text-white font-bold">Orange</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-32">
+                    <div class="grid md:grid-cols-2 md:gap-32 gap-10">
                         <div class="bg-f3/55 rounded-[30px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-">
                             <img src="assets/images/gelas4.png" alt="" class="w-[250px]">
                             <p class="text-2xl text-f1 dark:text-white font-bold">Guava</p>
@@ -59,21 +61,21 @@
                     </div>
                 </div>
             </div>
-            <div class="px-24 py-10">
-                <div class="grid grid-cols-4 gap-14">
-                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+            <div class="md:px-24 py-10">
+                <div class="grid md:grid-cols-4 grid-rows-4 md:gap-14 gap-10">
+                    <div class="bg-f3/55 rounded-[30px] md:h-[320px] md:w-[260px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                         <img src="assets/images/gelas6.png" alt="" class="w-[200px]">
                         <p class="text-2xl text-f1 dark:text-white font-bold">Grape</p>
                     </div>
-                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                    <div class="bg-f3/55 rounded-[30px] md:h-[320px] md:w-[260px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                         <img src="assets/images/gelas7.png" alt="" class="w-[200px]">
                         <p class="text-2xl text-f1 dark:text-white font-bold">Banana</p>
                     </div>
-                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                    <div class="bg-f3/55 rounded-[30px] md:h-[320px] md:w-[260px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                         <img src="assets/images/gelas 8.png" alt="" class="w-[200px]">
                         <p class="text-2xl text-f1 dark:text-white font-bold">Dragonfruit</p>
                     </div>
-                    <div class="bg-f3/55 rounded-[30px] h-[320px] w-[260px] flex flex-col justify-center items-center gap-2">
+                    <div class="bg-f3/55 rounded-[30px] md:h-[320px] md:w-[260px] h-[320px] w-[300px] flex flex-col justify-center items-center gap-2">
                         <img src="assets/images/gelas9.png" alt="" class="w-[200px]">
                         <p class="text-2xl text-f1 dark:text-white font-bold">Tomato</p>
                     </div>
@@ -168,14 +170,25 @@
             <img src="assets/images/grabfood.png" alt="" class="md:w-[320px] w-full pr-9 px-9">
         </div>
     </div>
-    <footer class="pt-20 bg-f3/50">
+    <footer class="pt-20 bg-f3/50 dark:bg-df2/50">
         <div id="footerbwah" class="flex flex-row justify-around pb-16">
             <div id="address" class="flex flex-col gap-3">
                 <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium md:px-0 px-6">address:</p>
-                <div class="gap-5">
+                <div class="flex flex-col gap-2">
                     <p class="text-white text-[19px] px-6 md:text-lg md:px-0">Jus Segar</p>
-                    <p class="w-[75%] md:w[50%] text-white text-[15px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
+                    <p class="w-full md:w[50%] text-white text-[12px] px-6 md:text-lg md:px-0">Jl. Danau Sunter Utara A5, Sunter Agung, Tanjung Priok, Jakarta Utara 14350, Indonesia</p>
                 </div>
+            </div>
+            <div id="menu" class="flex flex-col gap-2 md:px-0 px-5">
+                <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium ">Menu:</p>
+                <ul class="flex flex-col gap-1">
+                    <li class="text-white md:text-base text-sm"><a href="index.html">Home</li></a>
+                    <li class="text-white md:text-base text-sm"><a href="about.html">About</li></a>
+                    <li class="text-white md:text-base text-sm"><a href="products.html">Product</li></a>
+                    <li class="text-white md:text-base text-sm"><a href="location.html">Location</li></a>
+                    <li class="text-white md:text-base text-sm"><a href="article.html">Article</li></a>
+                    <li class="text-white md:text-base text-sm"><a href="contact.html">Contact</li></a>
+                </ul>
             </div>
             <div id="Contact" class="flex flex-col gap-4">
                 <p class="capitalize md:text-3xl text-xl tracking-wider text-white font-medium w-full">Contact Us:</p>
@@ -190,7 +203,7 @@
                 </div>
             </div>
         </div>
-        <div id="copyright" class="bg-f3/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
+        <div id="copyright" class="bg-f3/70 dark:bg-df2/70 md:py-8 md:px-[10.5rem] w-full h-1/6 flex justify-center items-center p-5 md:justify-start">
             <p class="uppercase text-white items-center flex-row">&copy;2024 Jus Segar. All right reserved</p>
         </div>
     </footer>
